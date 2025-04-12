@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="TaskPaneApp">
+  <Id>f9b15c00-dabc-4cbb-a4e3-fix000000001</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Nizam AI Tools</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+
+  <DisplayName DefaultValue="AI Writing Assistant"/>
+  <Description DefaultValue="Fix grammar, translate & rewrite tone instantly"/>
+
+  <IconUrl DefaultValue="https://localhost:3000/logo.png"/>
+  <SupportUrl DefaultValue="https://localhost:3000/support"/>
+
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="WordApi" />
+    </Sets>
+  </Requirements>
+
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://localhost:3000"/>
+  </DefaultSettings>
+
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>
